@@ -26,7 +26,6 @@ public class Contacts {
             }
         }
 
-        Contact contactToFind = null;
         for (Contact c : contacts){
             if (c.age <30){
                 contactToFind = c;
@@ -41,7 +40,7 @@ public class Contacts {
         contactMap.put("Alice", alice);
         contactMap.put("Charlie", charlie);
 
-        //contactToFind = contactMap.get("Alice");
+        contactToFind = contactMap.get("Alice");
 
 
         if (contactToFind == null){
