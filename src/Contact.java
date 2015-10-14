@@ -3,9 +3,14 @@
  */
 public class Contact {
     public String name;
-    public String address;
-    public String email;
     public int age;
+    public String email;
+    public String address;
+
+
+    public Contact(){
+
+    }
 
     public Contact(String name, int age){
         this.name = name;
@@ -13,5 +18,20 @@ public class Contact {
 
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 }
 
