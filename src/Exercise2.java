@@ -9,11 +9,11 @@ import java.util.Scanner;
 public class Exercise2 {
 
     public static void main(String[] args) {
-        //Scanner scanner = new Scanner(System.in);
-        //sayHello(scanner);
-
+        Scanner scanner = new Scanner(System.in);
+        sayHello(scanner);
         HashMap<String, ArrayList<String>> groups = new HashMap();
         String[] words = {"Alice", "Bob", "Charlie", "Austin", "Albert", "Connor"};
+
         for (String name : words) {
             String firstLetter = String.valueOf(name.charAt(0));
             ArrayList<String> list = groups.get(firstLetter);
@@ -27,15 +27,12 @@ public class Exercise2 {
             }
         }
         System.out.println(groups);
-
-
     }
-}
 
 
 
 
-    /*static void sayHello(Scanner scanner) {
+    static void sayHello(Scanner scanner) {
         while (true) {
             System.out.println("Hey can you do me a favor and just type the word hello for me?");
             String answer = scanner.nextLine();
@@ -49,7 +46,7 @@ public class Exercise2 {
             }
         }
     }
-    */
+
 
 }
 
