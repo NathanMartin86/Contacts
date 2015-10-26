@@ -1,7 +1,6 @@
 import jdk.nashorn.internal.parser.JSONParser;
 import jodd.json.JsonParser;
 import jodd.json.JsonSerializer;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
